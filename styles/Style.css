@@ -3,6 +3,57 @@
 .work-sans-font {
     font-family: "Work Sans", serif;
     font-optical-sizing: auto;
-    font-weight: 600;
+    font-weight: 400 ;
     font-style: normal;
   }
+
+  body{
+    max-width: 1440px;
+  }
+
+  /* Nav style */
+  .status-bar{
+    margin: 20px 140px;
+    display: flex;
+    justify-content: space-around;
+  }
+
+  .nav-icon{
+    display: flex;
+    gap: 11px;
+  }
+
+  .nav-content{
+    display: flex;
+    gap: 32px;
+    padding: 16px;
+  }
+
+  .nav-content-title1{
+    color: #FEA301;
+  }
+  .nav-content-title2{
+    color: #01ACFD;
+  }
+  .nav-content-title3{
+    color: #05D4DF;
+  }
+  .nav-content-title4{
+    color: #5D58EF;
+  }
+
+
+  /* Shared styles */
+  .btn-primary{
+    font-weight: 600px;
+    font-size: 20px;
+    padding: 10px 60px;
+    margin: 6px;
+    border: none;
+    border-radius: 12px;
+    color: white;
+    background-color: #FEA301;
+  }
+
+
+  
