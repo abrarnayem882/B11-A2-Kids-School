@@ -6,14 +6,18 @@
     font-weight: 400 ;
     font-style: normal;
   }
+  * {
+    margin:0; 
+    padding:0;
+  }
 
   body{
     max-width: 1440px;
   }
 
   /* Nav style */
-  .status-bar{
-    margin: 20px 140px;
+  .status-bar{i
+    padding: 20px 140px;
     display: flex;
     justify-content: space-around;
   }
@@ -27,13 +31,6 @@
     display: flex;
     gap: 32px;
     padding: 16px;
-  }
-
-  .nav-content-title1{
-    color: #FEA301;
-  }
-  .nav-content-title2{
-    color: #01ACFD;
   }
   .nav-content-title3{
     color: #05D4DF;
@@ -54,6 +51,27 @@
     color: white;
     background-color: #FEA301;
   }
+  .orange-color{
+    color: #FEA301;
+  }
+  .blues-color{
+    color: #01ACFD;
+  }
 
 
+  /* Banner styles */
+  .banner{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    margin: 0 140px;
+  }
+  .banner-title{
+    font-size: 50px;
+    font-weight: bold;
+    text-align: left;
+    padding: 130px 0;
+  }
+#black-color{
+  background-color: #111111;
+}
   
