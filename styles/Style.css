@@ -1,77 +1,125 @@
-@import url('https://fonts.googleapis.com/css2?family=Fira+Sans&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Quicksand:wght@300..700&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fira+Sans&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Quicksand:wght@300..700&family=Raleway:ital,wght@0,100..900;1,100..900&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fira+Sans&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Quicksand:wght@300..700&family=Raleway:ital,wght@0,100..900;1,100..900&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
 
-.work-sans-font {
-    font-family: "Work Sans", serif;
+.quicksand-font {
+    font-family: "Quicksand", serif;
     font-optical-sizing: auto;
-    font-weight: 400 ;
+    font-weight: 500 ;
     font-style: normal;
   }
-  * {
-    margin:0; 
-    padding:0;
+  .raleway-font{
+    font-family: "Raleway", serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal;
   }
-
   body{
     max-width: 1440px;
+    margin: 0 auto;
   }
 
-  /* Nav style */
-  .status-bar{i
-    padding: 20px 140px;
+  /* shared styles */
+
+  .display-flex{
     display: flex;
-    justify-content: space-around;
-  }
-
-  .nav-icon{
-    display: flex;
-    gap: 11px;
-  }
-
-  .nav-content{
-    display: flex;
-    gap: 32px;
-    padding: 16px;
-  }
-  .nav-content-title3{
-    color: #05D4DF;
-  }
-  .nav-content-title4{
-    color: #5D58EF;
-  }
-
-
-  /* Shared styles */
-  .btn-primary{
-    font-weight: 600px;
-    font-size: 20px;
-    padding: 10px 60px;
-    margin: 6px;
-    border: none;
-    border-radius: 12px;
-    color: white;
-    background-color: #FEA301;
-  }
-  .orange-color{
-    color: #FEA301;
-  }
-  .blues-color{
-    color: #01ACFD;
-  }
-
-
-  /* Banner styles */
-  .banner{
-    display: grid;
-    grid-template-columns: repeat(2,1fr);
-    margin: 0 140px;
-  }
-  .banner-title{
-    font-size: 50px;
-    font-weight: bold;
-    text-align: left;
-    padding: 130px 0;
-  }
-#black-color{
-  background-color: #111111;
 }
-  
+.btn-primary{
+  font-weight: 600px;
+  font-size: 20px;
+  padding: 15px 60px;
+  border: none;
+  border-radius: 12px;
+  color: white;
+  background-color: #FEA301;
+}
+.orange-color {
+    color: rgb(254, 163, 1);
+}
+
+.blue-color {
+    color: rgb(1, 172, 253);
+}
+
+.sky-blue-color {
+    color: rgb(5, 212, 223);
+}
+
+.purple-color {
+    color: rgb(93, 88, 239);
+}
+
+  /* nav-bar styles */
+  .nav-hamburger{
+    display: none;
+  }
+  .status-bar{
+    max-width: 1160px;
+    margin: 0 auto;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .nav-icon h2{
+    font-weight: bold;
+    font-size: 32;
+  }
+  .nav-item{
+    list-style: none;
+    font-size: 1.25rem;
+  }
+  .nav-links{
+    gap: 20px;
+  }
+  .nav-link{
+    text-decoration: none;
+    font-weight: bold;
+
+  }
+
+    /* Banner styles */
+    .banner{
+      justify-content: space-between;
+      align-items: center;
+      max-width: 1160px;
+      margin: 0 auto;
+      margin-top: 20px;
+      margin-bottom: 20px;
+    }
+    .banner-title{
+      font-size: 50px;
+      font-weight: bold;
+      text-align: left;
+      padding: 130px 0;
+    }
+    .banner-description{
+      font-weight: 400;
+      font-size: 1.25rem;
+      margin-bottom: 24px;
+    }
+  #black-color{
+    background-color: #111111;
+  }
+
+  @media screen and (max-width:576px) {
+    .nav-icon h2,
+    .nav-links,
+    .nav-btn{
+      display: none;
+    }
+    .nav-hamburger{
+      display: flex;
+    }
+    .status-bar{
+      padding: 10px;
+      border-bottom: 1px solid orange;
+    }
+    .banner {
+      flex-direction: column-reverse;
+  }
+  .banner-title h3{
+    font-size: 3.3rem;
+  }
+  .banner-description,
+  .banner-title{
+    text-align: center;
+  }
+  }
