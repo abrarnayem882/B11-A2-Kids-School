@@ -253,10 +253,42 @@
   margin: 80px auto;
   background-color: rgba(17, 17, 17, 1);
 }
-
-
+/* Footer styles */
+.about{
+  display: flex;
+  background-color: rgba(1, 172, 253, 1);
+  padding: 140px;
+  justify-content: space-between;
+  color: rgba(255, 255, 255, 1);
+}
+.about-icon{
+  display: flex;
+}
+.about-title{
+  font-weight: bold;
+  font-size: 30px;
+}
+.about-heading{
+  font-size: 24px;
+  font-weight: bold;
+}
+.about-detail{
+  max-width: 399.02px;
+  font-size: 16px;
+  font-weight: 300;
+}
+.about-info{
+  list-style: none;
+}
+.about-links{
+  text-decoration: none;
+  padding: 10px;
+}
 
   @media screen and (max-width:576px) {
+    body{
+      width: 100%;
+    }
     .nav-icon h2,
     .nav-links,
     .nav-btn,
@@ -301,6 +333,17 @@
   }
   .small-card-description{
     font-size: 9px;
+  }
+  .about{
+    flex-direction: column;
+    text-align: left;
+    gap: 5px;
+    padding: 0;
+  }
+  .about-info li{
+    font-size: 1rem;
+    padding-left: 15px;
+    margin-left: -53px;
   }
 
   }
