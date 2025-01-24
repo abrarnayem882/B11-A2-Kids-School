@@ -32,6 +32,18 @@
   color: white;
   background-color: #FEA301;
 }
+.secoundary-btn{
+  background-color: rgba(60, 216, 232, 1); 
+  margin-top: -25px;
+  width: 174px;
+  height: 47px;
+  color: white;
+  font-weight: 500px;
+  font-size: 15px;
+  border: none;
+  border-radius: 49px;
+}
+
 .orange-color {
     color: rgb(254, 163, 1);
 }
@@ -46,6 +58,15 @@
 
 .purple-color {
     color: rgb(93, 88, 239);
+}
+.img-border-radious{
+  border-radius: 15px;
+}
+#bg-green{
+  background-color: rgba(149, 178, 38, 1);
+}
+#bg-deep-purple{
+  background-color: rgba(93, 88, 240, 1);
 }
 
   /* nav-bar styles */
@@ -105,7 +126,8 @@
     margin-top: 60px;
     margin-bottom: 80px;
   }
-  .Standard-heading{
+  .Standard-heading,
+  .story-title{
     font-weight: bold;
     font-size: 2.8rem;
     text-align: center;
@@ -176,6 +198,52 @@
   background-color: white;
   border: none;
 }
+
+/* story styles */
+.story-title{
+  margin: 80px auto;
+}
+.story-card{
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); 
+  gap: 18px;
+}
+.story-big-card{
+    width: 540px;
+    height: 630px;
+    margin-left: 140px;
+}
+.story-small-card{
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 18px;
+}
+.big-card-description{
+  color: rgba(102, 102, 102, 1);
+  font-size: 1rem;
+  margin: 38px;
+}
+.big-card-title{
+  font-weight: bold;
+  font-size: 24px;
+  color: rgba(0, 0, 0, 1);
+  margin: 38px;
+}
+.small-card-description{
+  font-weight: bold;
+  font-size: 1rem;
+  color: rgba(0, 0, 0, 1);
+  margin: 38px;
+}
+#view-btn{
+  display: flex;
+  justify-items: center;
+  text-align: center;
+  margin: 80px auto;
+  background-color: rgba(17, 17, 17, 1);
+}
+
+
 
   @media screen and (max-width:576px) {
     .nav-icon h2,
