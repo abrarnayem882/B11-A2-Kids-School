@@ -180,7 +180,8 @@
   @media screen and (max-width:576px) {
     .nav-icon h2,
     .nav-links,
-    .nav-btn{
+    .nav-btn,
+    .arrows{
       display: none;
     }
     .nav-hamburger{
@@ -199,5 +200,9 @@
   .banner-description,
   .banner-title{
     text-align: center;
+  }
+  .card-container{
+    display: grid;
+    grid-template-columns: repeat(1,1fr);
   }
   }
