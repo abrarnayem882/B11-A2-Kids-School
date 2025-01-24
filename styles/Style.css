@@ -105,6 +105,9 @@
   }
 
     /* Banner styles */
+    .marquee{
+      color: red;
+    }
     .banner{
       justify-content: space-between;
       align-items: center;
@@ -175,10 +178,7 @@
   color: rgba(128, 128, 128, 1);
  }
  .card-btn{
-  border: none;
-  font-weight: bold;
-  font-size: 1rem;
-  background-color: white;
+text-decoration: none;
  }
 
 
@@ -306,6 +306,12 @@
     .banner {
       flex-direction: column-reverse;
   }
+  .banner-img img{
+    max-width: 100%;
+    height: auto;
+    margin-top: 15px;
+    margin-bottom: -80px;
+  }
   .banner-title h3{
     font-size: 3.3rem;
   }
@@ -338,7 +344,7 @@
     flex-direction: column;
     text-align: left;
     gap: 5px;
-    padding: 0;
+    padding: 60px 20px;
   }
   .about-info li{
     font-size: 1rem;
